@@ -4,6 +4,7 @@ import {createNativeStackNavigator} from '@react-navigation/native-stack';
 import {StatusBar} from 'react-native';
 
 import AllEmployees from './src/screens/AllEmployees';
+import IconButton from './src/components/UI/IconButton';
 
 export type RootParamList = {
   AllEmployees: {};
@@ -20,7 +21,17 @@ export default function App() {
           <Stack.Screen
             name="AllEmployees"
             component={AllEmployees}
-            options={() => ({
+            options={({navigation}) => ({
+              headerRight: ({tintColor}) => (
+                <IconButton
+                  icon="person-add"
+                  size={24}
+                  color={tintColor}
+                  onPress={() => {
+                    console.log("GO TO HANDLEEMPLOYEE")
+                  }}
+                />
+              ),
               headerTitle: 'All Employees',
             })}
           />
