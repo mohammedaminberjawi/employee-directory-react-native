@@ -5,10 +5,12 @@ import {StatusBar} from 'react-native';
 
 import EmployeesContextProvider from './src/store/employees-context';
 import AllEmployees from './src/screens/AllEmployees';
+import HandleEmployee from './src/screens/HandleEmployee';
 import IconButton from './src/components/UI/IconButton';
 
 export type RootParamList = {
   AllEmployees: {};
+  HandleEmployees: {employeeId: string};
 };
 
 const Stack = createNativeStackNavigator<RootParamList>();
@@ -30,12 +32,19 @@ export default function App() {
                     size={24}
                     color={tintColor}
                     onPress={() => {
-                      console.log('GO TO HANDLEEMPLOYEE');
+                      navigation.navigate('HandleEmployees');
                     }}
                   />
                 ),
                 headerTitle: 'All Employees',
               })}
+            />
+            <Stack.Screen
+              name="HandleEmployees"
+              component={HandleEmployee}
+              options={{
+                presentation: 'modal',
+              }}
             />
           </Stack.Navigator>
         </NavigationContainer>

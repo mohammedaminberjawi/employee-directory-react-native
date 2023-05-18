@@ -1,5 +1,6 @@
 import * as React from 'react';
 import {Pressable, StyleSheet, View, Text, Image} from 'react-native';
+import {useNavigation} from '@react-navigation/native';
 
 import {getFormattedDate} from '../utils/date';
 import {GlobalStyles} from '../constants/styles';
@@ -11,8 +12,10 @@ interface EmployeeItemProps {
 }
 
 export default function EmployeeItem({employee}: EmployeeItemProps) {
+  const navigation = useNavigation();
   const employeePressHandler = () => {
-    // GO TO EDIT EMPLOYEE
+    // @ts-ignore
+    navigation.navigate('HandleEmployees', {employeeId: employee.id});
   };
   return (
     <Pressable
