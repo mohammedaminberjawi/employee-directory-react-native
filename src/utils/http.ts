@@ -26,6 +26,10 @@ export async function updateEmployee(id: string, employee: Employee) {
   return response.data;
 }
 
+export function deleteEmployee(id: string) {
+  return axios.delete(`${BASE_URL}/api/employees/${id}`);
+}
+
 function prepareFormData(employee: Employee) {
   const employeeData = new FormData();
 
