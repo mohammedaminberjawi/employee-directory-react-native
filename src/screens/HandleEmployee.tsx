@@ -6,7 +6,7 @@ import {GlobalStyles} from '../constants/styles';
 import IconButton from '../components/ui/IconButton';
 import {Employee, EmployeesContext} from '../store/employees-context';
 import EmployeeForm from '../components/EmployeeForm';
-import {deleteEmployee, createEmployee, updateEmployee} from '../utils/http';
+import {deleteEmployee, createEmployee, updateEmployee} from '../services/api';
 import LoadingOverlay from '../components/ui/LoadingOverlay';
 import ErrorOverlay from '../components/ui/ErrorOverlay';
 import {NativeStackScreenProps} from '@react-navigation/native-stack';

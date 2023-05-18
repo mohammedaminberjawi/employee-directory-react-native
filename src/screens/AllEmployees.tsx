@@ -5,7 +5,7 @@ import filter from 'lodash.filter';
 
 import EmployeeList from '../components/EmployeeList';
 import {Employee, EmployeesContext} from '../store/employees-context';
-import {fetchEmployees} from '../utils/http';
+import {fetchEmployees} from '../services/api';
 import LoadingOverlay from '../components/ui/LoadingOverlay';
 import ErrorOverlay from '../components/ui/ErrorOverlay';
 import Input from '../components/ui/Input';
