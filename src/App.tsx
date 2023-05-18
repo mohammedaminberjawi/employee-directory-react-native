@@ -6,7 +6,7 @@ import {StatusBar} from 'react-native';
 import EmployeesContextProvider from './store/employees-context';
 import AllEmployees from './screens/AllEmployees';
 import HandleEmployee from './screens/HandleEmployee';
-import IconButton from './components/UI/IconButton';
+import IconButton from './components/ui/IconButton';
 
 export type RootParamList = {
   AllEmployees: {};

@@ -3,12 +3,12 @@ import {StyleSheet, View} from 'react-native';
 import {useContext, useLayoutEffect, useState} from 'react';
 
 import {GlobalStyles} from '../constants/styles';
-import IconButton from '../components/UI/IconButton';
+import IconButton from '../components/ui/IconButton';
 import {Employee, EmployeesContext} from '../store/employees-context';
 import EmployeeForm from '../components/EmployeeForm';
 import {deleteEmployee, createEmployee, updateEmployee} from '../utils/http';
-import LoadingOverlay from '../components/UI/LoadingOverlay';
-import ErrorOverlay from '../components/UI/ErrorOverlay';
+import LoadingOverlay from '../components/ui/LoadingOverlay';
+import ErrorOverlay from '../components/ui/ErrorOverlay';
 import {NativeStackScreenProps} from '@react-navigation/native-stack';
 import {RootParamList} from '../App';
 

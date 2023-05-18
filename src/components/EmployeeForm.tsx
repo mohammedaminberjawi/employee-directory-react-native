@@ -13,8 +13,9 @@ import {useState} from 'react';
 import DatePicker from 'react-native-date-picker';
 import {launchImageLibrary, Asset} from 'react-native-image-picker';
 
-import Input from './UI/Input';
-import Button from './UI/Button';
+import Input from './ui/Input';
+// @ts-ignore
+import Button from './ui/Button';
 import {getFormattedDate} from '../utils/date';
 import {GlobalStyles} from '../constants/styles';
 import {Employee} from '../store/employees-context';

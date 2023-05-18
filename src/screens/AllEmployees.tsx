@@ -6,9 +6,9 @@ import filter from 'lodash.filter';
 import EmployeeList from '../components/EmployeeList';
 import {Employee, EmployeesContext} from '../store/employees-context';
 import {fetchEmployees} from '../utils/http';
-import LoadingOverlay from '../components/UI/LoadingOverlay';
-import ErrorOverlay from '../components/UI/ErrorOverlay';
-import Input from '../components/UI/Input';
+import LoadingOverlay from '../components/ui/LoadingOverlay';
+import ErrorOverlay from '../components/ui/ErrorOverlay';
+import Input from '../components/ui/Input';
 import {GlobalStyles} from '../constants/styles';
 
 export default function AllEmployees() {

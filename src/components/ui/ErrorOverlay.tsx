@@ -1,5 +1,6 @@
 import {Text, StyleSheet, View} from 'react-native';
 
+// @ts-ignore
 import Button from './Button';
 import {GlobalStyles} from '../../constants/styles';
 
