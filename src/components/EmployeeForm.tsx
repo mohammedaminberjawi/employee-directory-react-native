@@ -196,7 +196,7 @@ export default function EmployeeForm({
   };
 
   return (
-    <View style={styles.container}>
+    <View>
       <Pressable style={imageStyles} onPress={onImagePress}>
         <Image
           source={{
@@ -337,9 +337,6 @@ export default function EmployeeForm({
 }
 
 const styles = StyleSheet.create({
-  container: {
-    // marginTop: 40,
-  },
   imageRow: {
     alignItems: 'center',
     justifyContent: 'center',
