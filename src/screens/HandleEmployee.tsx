@@ -10,7 +10,7 @@ import {deleteEmployee, createEmployee, updateEmployee} from '../utils/http';
 import LoadingOverlay from '../components/UI/LoadingOverlay';
 import ErrorOverlay from '../components/UI/ErrorOverlay';
 import {NativeStackScreenProps} from '@react-navigation/native-stack';
-import {RootParamList} from '../../App';
+import {RootParamList} from '../App';
 
 type HandleEmployeeProps = NativeStackScreenProps<
   RootParamList,
