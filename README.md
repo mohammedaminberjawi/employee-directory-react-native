@@ -1,6 +1,6 @@
 # employee-directory-react-native
 
-A basic employee directory using React Native
+An employee directory app build using React Native
 
 ## Installation and Setup
 
@@ -27,6 +27,9 @@ cd ..
 ```
 
 ### 3. Run the app
+
+Make sure the backend server is running before continuing.
+
 To start the server run:
 ```
 npm start
