@@ -2,6 +2,7 @@ import * as React from 'react';
 import {StyleSheet, View, Text} from 'react-native';
 import {useContext, useEffect, useState} from 'react';
 
+import EmployeeList from '../components/EmployeeList';
 import {EmployeesContext} from '../store/employees-context';
 import {fetchEmployees} from '../utils/http';
 import LoadingOverlay from '../components/UI/LoadingOverlay';
@@ -55,7 +56,11 @@ export default function AllEmployees() {
   ) {
     content = (
       <View>
-        <Text>ALL EMPLOYEES</Text>
+        <EmployeeList
+          employees={employeesContext.employees}
+          refreshing={isLoading}
+          onRefresh={getEmployees}
+        />
       </View>
     );
   }
